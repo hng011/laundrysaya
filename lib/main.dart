@@ -207,15 +207,15 @@ Future<void> _updateCount(LaundryItem item, int change) async {
                                             MainAxisAlignment.end,
                                         children: [
                                           InkWell(
-                                            onTap: () => _updateCount(item, 1),
-                                            child: const Icon(Icons.add_circle,
-                                                color: Colors.green),
-                                          ),
-                                          const SizedBox(width: 15),
-                                          InkWell(
                                             onTap: () => _updateCount(item, -1),
                                             child: const Icon(Icons.remove_circle,
                                                 color: Colors.red),
+                                          ),
+                                          const SizedBox(width: 15),
+                                          InkWell(
+                                            onTap: () => _updateCount(item, 1),
+                                            child: const Icon(Icons.add_circle,
+                                                color: Colors.green),
                                           ),
                                         ],
                                       ),
